@@ -1,0 +1,135 @@
+/* UserProfile.css */
+
+.profile-layout {
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  gap: 20px; /* Add spacing between profile and followers */
+  padding: 20px; /* Adjust padding for layout */
+  flex-wrap: wrap; /* Ensure responsiveness */
+  margin-top: 5%; /* Create space below the header */
+  right: 70%;
+  position: relative;
+}
+
+.profile-container {
+  width: 20%; /* Smaller width for alignment on the right */
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.bio,
+.location,
+.company {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats h4 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.stats p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.profile-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.profile-link:hover {
+  background-color: #2980b9;
+}
+
+.followers-container {
+  width: 40%; /* Adjusted width for alignment */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.followers-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.followers-list {
+  list-style: none;
+  padding: 0;
+}
+
+.follower-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.follower-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.follower-item a {
+  text-decoration: none;
+  color: #3498db;
+  font-size: 1rem;
+}
+
+.follower-item a:hover {
+  text-decoration: underline;
+}
+
+.follower-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-layout {
+    flex-direction: column; /* Stack profile and followers vertically */
+    align-items: flex-end; /* Align to the right even on small screens */
+    margin-top: 10px; /* Adjust space for smaller screens */
+  }
+
+  .profile-container,
+  .followers-container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}

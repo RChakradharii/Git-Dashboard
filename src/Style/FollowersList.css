@@ -1,0 +1,74 @@
+/* Align FollowersList beside UserProfile */
+.followers-container {
+  width: 40%; /* Adjust width to fit beside UserProfile */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5%; /* Match with UserProfile's margin */
+}
+
+.followers-container h2 {
+  font-size: 1.8rem; /* Size of the heading */
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.followers {
+  display: flex;
+  flex-wrap: wrap; /* Ensure followers wrap to new rows */
+  gap: 15px; /* Space between each follower card */
+  justify-content: center; /* Center all follower cards */
+}
+
+.follower {
+  display: flex;
+  flex-direction: column; /* Stack image and name vertically */
+  align-items: center; /* Center-align content */
+  width: 120px; /* Fixed width for follower cards */
+  text-align: center;
+}
+
+.follower img {
+  width: 80px; /* Avatar size */
+  height: 80px;
+  border-radius: 50%; /* Circular avatar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add depth */
+}
+
+.follower a {
+  margin-top: 10px; /* Space between avatar and name */
+  font-size: 1rem;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.follower a:hover {
+  text-decoration: underline;
+  color: #1d6fa5; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .followers-container {
+    width: 90%; /* Full width on smaller screens */
+    margin-top: 20px; /* Space below UserProfile */
+  }
+
+  .followers {
+    gap: 10px; /* Reduce spacing between followers */
+  }
+
+  .follower {
+    width: 100px; /* Adjust width for smaller screens */
+  }
+
+  .follower img {
+    width: 60px; /* Adjust avatar size */
+    height: 60px;
+  }
+
+  .follower a {
+    font-size: 0.9rem; /* Slightly smaller font for name */
+  }
+}
